@@ -268,5 +268,86 @@ void drawVillage()
 	glVertex2f(50.0f,-180.0f+y);
     glEnd();
 
+    glBegin(GL_POLYGON);//FT7
+	glColor3ub(25,107,34);
+    glVertex2f(-230.0f,-20.0f);
+	glVertex2f(-190.0f, -20.0f);
+	glVertex2f(-210.0f,0.0f);
+	glEnd();
+	glBegin(GL_POLYGON);
+	glVertex2f(-210.0f, 20.0f);
+	glVertex2f(-225.0f,-5.0f);
+	glVertex2f(-195.0f,-5.0f);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);
+	glVertex2f(-223.0f, 15.0f);
+	glVertex2f(-197.0f,15.0f);
+	glVertex2f(-210.0f,35.0f);
+
+    glEnd();
+
+     glBegin(GL_POLYGON);//FT5
+	glColor3ub(25,107,34);
+    glVertex2f(-100.0f,20.0f);
+	glVertex2f(-120.0f, 0.0f);
+	glVertex2f(-80.0f,0.0f);
+	glEnd();
+	glBegin(GL_POLYGON);
+	glColor3ub(25,107,34);
+	glVertex2f(-125.0f, 15.0f);
+	glVertex2f(-75.0f,15.0f);
+	glVertex2f(-100.0f,40.0f);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);
+	glVertex2f(-120.0f, 35.0f);
+	glVertex2f(-80.0f,35.0f);
+	glVertex2f(-100.0f,55.0f);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);//FT6
+	glColor3ub(25,107,34);
+    glVertex2f(-180.0f,-20.0f);
+	glVertex2f(-135.0f, -20.0f);
+	glVertex2f(-157.5f,0.0f);
+	glEnd();
+	glBegin(GL_POLYGON);
+	glColor3ub(25,107,34);
+	glVertex2f(-185.0f, -5.0f);
+	glVertex2f(-130.0f,-5.0f);
+	glVertex2f(-157.5f,20.0f);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(25,107,34);
+	glVertex2f(-175.0f, 15.0f);
+	glVertex2f(-140.0f,15.0f);
+	glVertex2f(-157.5f,40.0f);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(25,107,34);
+	glVertex2f(-175.0f, -35.0f);
+	glVertex2f(-140.0f,-35.0f);
+	glVertex2f(-157.5f,-15.0f);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);//FT6(BOTTOM)
+    glColor3ub(80,49,22);
+	glVertex2f(-160.0f, -100.0f);
+	glVertex2f(-155.0f,-100.0f);
+	glVertex2f(-155.0f,-35.0f);
+	glVertex2f(-160.0f,-35.0f);
+
+
+    glEnd();
+
     glFlush();
 }

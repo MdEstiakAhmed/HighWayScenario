@@ -63,6 +63,9 @@
 		<Unit filename="assets/sun.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="assets/vehicles.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="assets/village.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>

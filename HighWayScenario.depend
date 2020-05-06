@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1586758947 source:e:\code\opengl_code\highwayscenario\main.cpp
+1588769098 source:e:\code\opengl_code\highwayscenario\main.cpp
 	"main.h"
 
-1586758881 e:\code\opengl_code\highwayscenario\main.h
+1588767430 e:\code\opengl_code\highwayscenario\main.h
 	<windows.h>
 	<GL/glut.h>
 	<math.h>
@@ -16,6 +16,8 @@
 	"assets/village.cpp"
 	"assets/mountain.cpp"
 	"assets/windmill.cpp"
+	"assets/vehicles.cpp"
+	"assets/rain.cpp"
 
 1301111162 c:\program files (x86)\codeblocks\mingw\include\windows.h
 	<winresrc.h>
@@ -234,12 +236,12 @@
 
 1586054417 e:\code\opengl_code\highwayscenario\assets\background.cpp
 
-1586754822 e:\code\opengl_code\highwayscenario\assets\sky.cpp
+1588498791 e:\code\opengl_code\highwayscenario\assets\sky.cpp
 
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
-1586060771 e:\code\opengl_code\highwayscenario\assets\sun.cpp
+1588499019 e:\code\opengl_code\highwayscenario\assets\sun.cpp
 
 1586062087 e:\code\opengl_code\highwayscenario\assets\moon.cpp
 
@@ -251,9 +253,13 @@
 
 1586100076 e:\code\opengl_code\highwayscenario\assets\road.cpp
 
-1586761167 e:\code\opengl_code\highwayscenario\assets\village.cpp
+1588498591 e:\code\opengl_code\highwayscenario\assets\village.cpp
 
 1586758420 e:\code\opengl_code\highwayscenario\assets\mountain.cpp
 
 1586760755 e:\code\opengl_code\highwayscenario\assets\windmill.cpp
+
+1588509931 e:\code\opengl_code\highwayscenario\assets\vehicles.cpp
+
+1588769519 e:\code\opengl_code\highwayscenario\assets\rain.cpp
 

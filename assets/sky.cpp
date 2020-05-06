@@ -10,6 +10,18 @@ void daySky()
     glFlush();
 }
 
+void eveningSky()
+{
+    glBegin(GL_QUADS);
+	glColor3ub(255, 218, 33);
+	glVertex2f(300, 300);
+	glVertex2f(-300, 300);
+	glVertex2f(-300, 100);
+	glVertex2f(300, 100);
+	glEnd();
+    glFlush();
+}
+
 void nightSky()
 {
     glBegin(GL_QUADS);

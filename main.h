@@ -12,16 +12,22 @@
 #include "assets/village.cpp"
 #include "assets/mountain.cpp"
 #include "assets/windmill.cpp"
+#include "assets/vehicles.cpp"/
+#include "assets/rain.cpp"
 
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
 
 using namespace std;
 
+void drawRain();
+
 void daySky();
 void nightSky();
+void eveningSky();
 
 void drawSun();
+void drawEveningSun();
 
 void drawMoon();
 
@@ -37,5 +43,7 @@ void drawVillage();
 void drawMountain(int r, int g, int b, int r2, int g2, int b3);
 
 void showWindMill();
+
+void drawVehicles();
 
 #endif // MAIN_H_INCLUDED

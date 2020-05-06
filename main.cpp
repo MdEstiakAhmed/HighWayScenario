@@ -1,5 +1,6 @@
 #include "main.h"
 int status = 1;
+int rainStatus = 0;
 
 void day()
 {
@@ -16,14 +17,20 @@ void night()
 	drawMountain(48, 105, 63, 59, 130, 77);
 }
 
-
+void evening()
+{
+    eveningSky();
+    drawEveningSun();
+    drawMountain(50, 168, 82, 50, 191, 88);
+}
 
 void display()
 {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
-	drawRoad();
 	drawVillage();
+	drawRoad();
+	drawVehicles();
 
     if(status==1)
     {
@@ -33,8 +40,17 @@ void display()
     {
         night();
     }
+    else if(status==3)
+    {
+        evening();
+    }
     showCloud();
     showWindMill();
+    if(rainStatus==1)
+    {
+        drawRain();
+    }
+
     glutSwapBuffers();
 }
 
@@ -47,6 +63,18 @@ void key(unsigned char key, int x, int y)
     else if(key == 'n')
     {
         status=2;
+    }
+    else if(key == 'e')
+    {
+        status=3;
+    }
+    else if(key == 'r')
+    {
+        rainStatus = 1;
+    }
+    else if(key == 'R')
+    {
+        rainStatus = 0;
     }
     glutPostRedisplay();
 }
@@ -65,6 +93,7 @@ int main(int argc, char** argv)
     glutKeyboardFunc(key);
     cloudAnimationTimer(0);
     doFrame(0);
+    carFrame(0);
     glutMainLoop();
     return 0;
 }
