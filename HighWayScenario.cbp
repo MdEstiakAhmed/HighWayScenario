@@ -51,6 +51,9 @@
 		<Unit filename="assets/mountain.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="assets/rain.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="assets/road.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
