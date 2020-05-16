@@ -78,6 +78,20 @@ void drawCar(int r, int g, int b)
 void drawVehicles()
 {
     glPushMatrix();
+	glTranslatef(100, -250, 0);
+	glTranslated(-50-carFrameNumber,30,0);
+	glScaled(18, 18,1);
+	drawCar(133, 99, 99);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(-300, -260, 0);
+	glTranslated(-150-carFrameNumber,30,0);
+	glScaled(18, 18,1);
+	drawCar(196, 196, 196);
+	glPopMatrix();
+
+    glPushMatrix();
 	glTranslatef(-300, -300, 0);
 	glTranslated(-150+carFrameNumber,30,0);
 	glScaled(18, 18,1);

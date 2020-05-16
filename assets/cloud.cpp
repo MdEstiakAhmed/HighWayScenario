@@ -55,6 +55,5 @@ void cloudAnimationTimer(int value) {
 
 	glutPostRedisplay();
 
-
 	glutTimerFunc(100, cloudAnimationTimer, 0);
 }

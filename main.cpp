@@ -1,6 +1,8 @@
 #include "main.h"
 int status = 1;
 int rainStatus = 0;
+int cloudStatus = 1;
+int snowStatus = 0;
 
 void day()
 {
@@ -44,11 +46,20 @@ void display()
     {
         evening();
     }
-    showCloud();
+
+    if(cloudStatus==1)
+    {
+        showCloud();
+    }
+
     showWindMill();
     if(rainStatus==1)
     {
         drawRain();
+    }
+    if(snowStatus==1)
+    {
+        drawSnow();
     }
 
     glutSwapBuffers();
@@ -75,6 +86,22 @@ void key(unsigned char key, int x, int y)
     else if(key == 'R')
     {
         rainStatus = 0;
+    }
+    else if(key == 's')
+    {
+        snowStatus = 1;
+    }
+    else if(key == 'S')
+    {
+        snowStatus = 0;
+    }
+    else if(key == 'c')
+    {
+        cloudStatus = 1;
+    }
+    else if(key == 'C')
+    {
+        cloudStatus = 0;
     }
     glutPostRedisplay();
 }

@@ -14,6 +14,7 @@
 #include "assets/windmill.cpp"
 #include "assets/vehicles.cpp"/
 #include "assets/rain.cpp"
+#include "assets/snow.cpp"
 
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
@@ -21,6 +22,7 @@
 using namespace std;
 
 void drawRain();
+void drawSnow();
 
 void daySky();
 void nightSky();
