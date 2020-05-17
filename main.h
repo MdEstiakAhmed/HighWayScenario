@@ -15,6 +15,8 @@
 #include "assets/vehicles.cpp"/
 #include "assets/rain.cpp"
 #include "assets/snow.cpp"
+#include "assets/roadLamp.cpp"
+#include "assets/bird.cpp"
 
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
@@ -47,5 +49,9 @@ void drawMountain(int r, int g, int b, int r2, int g2, int b3);
 void showWindMill();
 
 void drawVehicles();
+
+void showLampUp(int st);
+void showLampDown(int st);
+void showDird();
 
 #endif // MAIN_H_INCLUDED

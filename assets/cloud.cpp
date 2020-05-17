@@ -44,6 +44,11 @@ void showCloud()
     glTranslatef(-150+cloudPosition,30,0);
     drawCloud();
     glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-250+cloudPosition,25,0);
+    drawCloud();
+    glPopMatrix();
 }
 
 void cloudAnimationTimer(int value) {

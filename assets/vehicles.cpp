@@ -75,34 +75,111 @@ void drawCar(int r, int g, int b)
 	glEnd();
 }
 
+void drawBus(int r, int g, int b)
+{
+	glPushMatrix();
+	glTranslatef(-1.5f, -0.1f, 0);
+	glScalef(0.5f,0.5f,1);
+	drawWheel();
+	glPopMatrix();
+	glPushMatrix();
+	glTranslatef(1.5f, -0.1f, 0);
+	glScalef(0.5f,0.5f,1);
+	drawWheel();
+	glPopMatrix();
+
+	// car structure
+	glBegin(GL_POLYGON);
+	glColor3ub(r, g, b);
+	glVertex2f(-3.5f,0);    //1
+	glVertex2f(3.5f,0);     //2
+	glVertex2f(3.5f,4);  //3
+	glVertex2f(-3.5,4);  //4
+	glEnd();
+
+	// first window
+	glBegin(GL_POLYGON);
+	glColor3f(0,0,0);
+	glVertex2f(-3.0f,3.0f);
+	glVertex2f(-3.0f,2.0f);
+	glVertex2f(-2.0f,2.0f);
+	glVertex2f(-2.0f,3.0f);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f(0,0,0);
+	glVertex2f(-1.5f,3.0f);
+	glVertex2f(-1.5f,2.0f);
+	glVertex2f(-0.5f,2.0f);
+	glVertex2f(-0.5f,3.0f);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f(0,0,0);
+	glVertex2f(0.0f,3.0f);
+	glVertex2f(0.0f,2.0f);
+	glVertex2f(1.0f,2.0f);
+	glVertex2f(1.0f,3.0f);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f(0,0,0);
+	glVertex2f(1.5f,3.0f);
+	glVertex2f(1.5f,2.0f);
+	glVertex2f(2.5f,2.0f);
+	glVertex2f(2.5f,3.0f);
+	glEnd();
+
+}
+
 void drawVehicles()
 {
+    // white
     glPushMatrix();
 	glTranslatef(100, -250, 0);
+	glTranslated(300-carFrameNumber,30,0);
+	glScaled(18, 18,1);
+	drawCar(252, 252, 252);
+	glPopMatrix();
+
+	// blue
+	glPushMatrix();
+	glTranslatef(300, -250, 0);
 	glTranslated(-50-carFrameNumber,30,0);
 	glScaled(18, 18,1);
-	drawCar(133, 99, 99);
+	drawCar(8, 16, 64);
 	glPopMatrix();
 
+	// green
 	glPushMatrix();
 	glTranslatef(-300, -260, 0);
-	glTranslated(-150-carFrameNumber,30,0);
+	glTranslated(300-carFrameNumber,30,0);
 	glScaled(18, 18,1);
-	drawCar(196, 196, 196);
+	drawBus(0, 92, 49);
 	glPopMatrix();
 
+	// ash
     glPushMatrix();
 	glTranslatef(-300, -300, 0);
-	glTranslated(-150+carFrameNumber,30,0);
+	glTranslated(-50+carFrameNumber,30,0);
 	glScaled(18, 18,1);
-	drawCar(196, 196, 196);
+	drawCar(64, 64, 64);
 	glPopMatrix();
 
+	// red
 	glPushMatrix();
 	glTranslatef(100, -300, 0);
-	glTranslated(-150+carFrameNumber,30,0);
+	glTranslated(0+carFrameNumber,30,0);
 	glScaled(18, 18,1);
-	drawCar(133, 99, 99);
+	drawCar(255, 54, 54);
+	glPopMatrix();
+
+	// blue
+	glPushMatrix();
+	glTranslatef(250, -300, 0);
+	glTranslated(-300+carFrameNumber,30,0);
+	glScaled(18, 18,1);
+	drawBus(138, 154, 255);
 	glPopMatrix();
 }
 

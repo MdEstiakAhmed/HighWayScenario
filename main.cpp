@@ -9,6 +9,7 @@ void day()
     daySky();
 	drawSun();
 	drawMountain(50, 168, 82, 50, 191, 88);
+	showDird();
 }
 
 void night()
@@ -24,15 +25,18 @@ void evening()
     eveningSky();
     drawEveningSun();
     drawMountain(50, 168, 82, 50, 191, 88);
+    showDird();
 }
 
 void display()
 {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
-	drawVillage();
+	drawVillage(status);
 	drawRoad();
+	showLampUp(status);
 	drawVehicles();
+	showLampDown(status);
 
     if(status==1)
     {
@@ -121,6 +125,7 @@ int main(int argc, char** argv)
     cloudAnimationTimer(0);
     doFrame(0);
     carFrame(0);
+    birdFrame(0);
     glutMainLoop();
     return 0;
 }

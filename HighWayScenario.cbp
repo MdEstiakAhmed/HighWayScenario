@@ -42,6 +42,9 @@
 			<Add library="gdi32" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/lib" />
 		</Linker>
+		<Unit filename="assets/bird.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="assets/cloud.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -57,7 +60,13 @@
 		<Unit filename="assets/road.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="assets/roadLamp.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="assets/sky.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="assets/snow.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="assets/star.cpp">
